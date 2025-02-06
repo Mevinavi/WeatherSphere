@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Monitoring</title>
+  <link rel="stylesheet" href="API.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> <!-- Leaflet CSS -->
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Weather Monitoring</h1>
+      <p class="subtitle">Check the weather for any city</p>
+      <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Enter city name" required aria-label="Enter city name">
+        <button type="submit">Get Weather</button>
+      </form>
+      <div class="loading" id="loadingSpinner">Loading...</div> <!-- Loading spinner -->
+      <div id="weatherResult">
+        <!-- Weather data will be displayed here -->
+      </div>
+      <div id="map" style="height: 200px; width: 100%; margin-top: 20px;"></div> <!-- Map container -->
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <!-- Leaflet JS -->
+  <script src="jspractice.js"></script>
+</body>
+</html>
